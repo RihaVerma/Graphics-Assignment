@@ -25,7 +25,7 @@ void func2(int x1,int y1,int x2,int y2,int x3,int y3)
     a3=p+(x3-p)*cos(Angle)-(y3-q)*sin(Angle);
     b3=q+(x3-p)*sin(Angle)+(y3-q)*cos(Angle);
     printf("Rotate");
-    triangle(a1,b1,a2,b2,a3,b3);
+    func1(a1,b1,a2,b2,a3,b3);
 }
 void main()
 {
@@ -38,11 +38,11 @@ void main()
     scanf("%d%d",&x2,&y2);
     printf("Enter the value of x3 y3:");
     scanf("%d%d",&x3,&y3);
-    triangle(x1,y1,x2,y2,x3,y3);
+    func1(x1,y1,x2,y2,x3,y3);
     getch();
     cleardevice();
-    Rotate(x1,y1,x2,y2,x3,y3);
+    func2(x1,y1,x2,y2,x3,y3);
     setcolor(1);
-    triangle(x1,y1,x2,y2,x3,y3);
+    func1(x1,y1,x2,y2,x3,y3);
     getch();
 }
